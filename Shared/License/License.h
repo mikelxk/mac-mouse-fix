@@ -87,7 +87,7 @@ MFDataClassInterface0(MFDataClassBase, MFLicenseTypeInfo)
 
 /// Top-level dataclasses
 
-MFDataClassInterface3(MFDataClassBase, MFLicenseState,   readonly, assign,        , BOOL,                          isLicensed,
+MFDataClassInterface3(MFDataClassBase, MFLicenseState,   readwrite, assign,        , BOOL,                          isLicensed,
                                                          readonly, assign,        , MFValueFreshness,              freshness,
                                                          readonly, strong, nonnull, MFLicenseTypeInfo *,           licenseTypeInfo)
 

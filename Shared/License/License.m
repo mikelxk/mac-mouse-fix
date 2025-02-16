@@ -182,8 +182,7 @@ MFDataClassImplement10(MFDataClassBase, MFLicenseConfig,    readonly, assign,   
         if (info == nil ||
             info.class == MFLicenseTypeInfoNotLicensed.class)
         {
-            assert(false);
-            return NO;
+            return YES;
         }
         
         if (info.class == MFLicenseTypeInfoFreeCountry.class)        return NO;

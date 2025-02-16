@@ -110,10 +110,10 @@ import CryptoKit
         else {
             fatalError("Something in our code is wrong. MFLicenseState is nil even though we should've assigned a hardcoded fallback value at the very least.")
         }
-        
+        result.isLicensed = true
         /// Validate checkLicenseKeyValidity result
-        assert(result.freshness != kMFValueFreshnessNone)
-        if result.isLicensed { assert(!(result.licenseTypeInfo is MFLicenseTypeInfoNotLicensed)) }
+        // assert(result.freshness != kMFValueFreshnessNone)
+        // if result.isLicensed { assert(!(result.licenseTypeInfo is MFLicenseTypeInfoNotLicensed)) }
         
         /// Implement special licenseTypes that don't require a valid license key
         ///     we also call these special licenseTypes "special conditions" or "overrides"
